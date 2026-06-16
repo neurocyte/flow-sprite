@@ -1,0 +1,13 @@
+.{
+    .name = .flow_sprite,
+    .version = "1.3.2-dev",
+    .paths = .{""},
+    .fingerprint = 0x6c3068f632275cef,
+    .minimum_zig_version = "0.16.0",
+    .dependencies = .{
+        .z2d = .{
+            .url = "git+https://github.com/vancluever/z2d?ref=main#e6fcdb0e83119e193571959770c13ef63a5331de",
+            .hash = "z2d-0.12.0-j5P_HsE8EQAuRulQMsEkrCevU85rTFl4JIOz7uJdCYA-",
+        },
+    },
+}

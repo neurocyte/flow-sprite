@@ -255,7 +255,9 @@ pub const Canvas = struct {
 
     /// Acquires a z2d drawing context, caller MUST deinit context.
     pub fn getContext(self: *Canvas) z2d.Context {
-        var ctx = z2d.Context.init(self.alloc, &self.sfc);
+        // The sprite draw functions never deference `Context.io`. Pass
+        // undefined to bridge the API without threading an Io through.
+        var ctx = z2d.Context.init(undefined, self.alloc, &self.sfc);
         // Offset by our padding to keep
         // coordinates relative to the cell.
         ctx.setTransformation(self.transformation());
