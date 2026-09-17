@@ -3,11 +3,11 @@
     .version = "1.3.2-dev",
     .paths = .{""},
     .fingerprint = 0x6c3068f632275cef,
-    .minimum_zig_version = "0.16.0",
+    .minimum_zig_version = "0.17.0-dev.2122+3e15e99e6",
     .dependencies = .{
         .z2d = .{
-            .url = "git+https://github.com/vancluever/z2d?ref=main#e6fcdb0e83119e193571959770c13ef63a5331de",
-            .hash = "z2d-0.12.0-j5P_HsE8EQAuRulQMsEkrCevU85rTFl4JIOz7uJdCYA-",
+            .url = "git+https://github.com/neurocyte/z2d?ref=zig-0.17#37da900c66b3c1188084d843a32738e282bf3bd1",
+            .hash = "z2d-0.12.2-pre-j5P_Hg1BEQAP0jYVlA--V3rWto6TOGDyZkM5etGIjh66",
         },
     },
 }
